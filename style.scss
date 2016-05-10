@@ -1,0 +1,80 @@
+@import "resets";
+
+$header-bg-color: rgb(0, 81, 148); //dark blue
+$header-div-color-hover: rgb(59, 128, 180);
+$background: rgb(0, 98, 180);
+$column-bg-color: rgb(219, 221, 224);
+
+
+body {
+  background-color: $background;
+  font-family: sans-serif;
+}
+#header {
+  padding: 1em 0 1em 0;
+  background-color: $header-bg-color;
+}
+.board-text {
+
+}
+.boards {
+  padding: .5em 3em 0 0;
+  margin-right: .5em;
+  background-color: rgb(83, 146, 190);
+  color: #FFF;
+  border-radius: 5px;
+  float: left;
+}
+.boards img {
+  width: 5%;
+  float: left;
+}
+.boards:hover {
+  background-color: $header-div-color-hover;
+}
+.search-field {
+  background-color: $header-div-color-hover;
+  padding: 0 .5em .5em .5em;
+  border-radius: 5px;
+  float: left;
+}
+.search-field:hover {
+  background-color: $header-div-color-hover;
+}
+h1 {
+  width: 75%;
+  padding: .25em 0;
+  text-align: center;
+  background-color: $header-bg-color;
+}
+h2 {
+  color: #FFF;
+  font-size: 1.25em;
+  font-weight: 600;
+  padding: 1.5em;
+  clear: both;
+}
+.color-legend, .big-picture, .overall-topics {
+  padding: 1em;
+  margin-left: .5em;
+  width: 20%;
+  border-radius: 5px;
+  background-color: $column-bg-color;
+  float: left;
+}
+h3 {
+  padding: .25em;
+  color: rgb(60, 60, 60);
+  font-size: .8em;
+  font-weight: 600;
+}
+.column-items {
+  width: 80%;
+  padding: .75em;
+  margin: .25em;
+  border-radius: 5px;
+  font-size: .75em;
+  font-weight:300;
+  color: rgb(60, 60, 60);
+  background-color: #FFF;
+}
