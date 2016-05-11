@@ -5,57 +5,93 @@ $header-div-color-hover: rgb(59, 128, 180);
 $background: rgb(0, 98, 180);
 $column-bg-color: rgb(219, 221, 224);
 
-
+@font-face {
+    font-family: "trelli";
+    src: url("trelli.woff");
+  }
 body {
   background-color: $background;
   font-family: sans-serif;
 }
 #header {
-  padding: 1em 0 1em 0;
+  padding: .25em 0 .25em 0;
   background-color: $header-bg-color;
 }
-.board-text {
-
+.boards span::before {
+  font-family: "trelli";
+  content: "\e906";
 }
+// .boards span {
+//   padding-left: .25em;
+// }
 .boards {
-  padding: .5em 3em 0 0;
-  margin-right: .5em;
+  padding: .5em 1em .5em 1em;
+  margin: .25em .5em .5em .5em;
   background-color: rgb(83, 146, 190);
   color: #FFF;
   border-radius: 5px;
-  float: left;
-}
-.boards img {
-  width: 5%;
   float: left;
 }
 .boards:hover {
   background-color: $header-div-color-hover;
 }
 .search-field {
-  background-color: $header-div-color-hover;
-  padding: 0 .5em .5em .5em;
+  background-color: rgb(83, 146, 190);
+  padding: .5em .5em .45em .5em;
+  margin: .25em 0 .5em 0;
   border-radius: 5px;
   float: left;
 }
-.search-field:hover {
+.search-field::after {
+    font-family: "trelli";
+    content: "\e931";
+    color: #FFF;
+}
+.search-field:hover, input:hover {
   background-color: $header-div-color-hover;
 }
-h1 {
-  width: 75%;
-  padding: .25em 0;
+input {
+  border: none;
+  background-color: rgb(83, 146, 190);
+  font-size: 1em;
+}
+h1 img {
+  width: 10%;
+  margin-left: 10em;
+  // padding: .25em 0;
   text-align: center;
   background-color: $header-bg-color;
 }
-h2 {
+.houston h2 {
   color: #FFF;
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 600;
-  padding: 1.5em;
+  padding: .75em;
+  margin-right: 1em;
   clear: both;
+  // display: inline;
+  // overflow: auto;
+  display: block;
+  position: relative;
+}
+
+.houston h2::after {
+  font-family: "trelli";
+  content: "\e933";
+  color: #FFF;
+  font-size: .75em;
+}
+.houston span::before {
+  font-family: "trelli";
+  content: "\e92d";
+  color: #FFF;
+  font-size: .75em;
+}
+.houston span {
+  color: #FFF;
 }
 .color-legend, .big-picture, .overall-topics {
-  padding: 1em;
+  padding: .25em;
   margin-left: .5em;
   width: 20%;
   border-radius: 5px;
@@ -63,18 +99,107 @@ h2 {
   float: left;
 }
 h3 {
-  padding: .25em;
+  padding: .5em 0;
   color: rgb(60, 60, 60);
   font-size: .8em;
   font-weight: 600;
+  // margin-right: 3em;
 }
 .column-items {
-  width: 80%;
-  padding: .75em;
-  margin: .25em;
+  width: 96%;
+  padding: 1em .25em;
+  margin: .25em 0 .25em 0;
   border-radius: 5px;
   font-size: .75em;
-  font-weight:300;
+  font-weight:500;
   color: rgb(60, 60, 60);
   background-color: #FFF;
+}
+.big-picture .column-items::after {
+  font-family: "trelli";
+  content: "\e911";
+  color: rgb(168,168,168);
+}
+.big-picture .column-items p {
+  margin-bottom: .75em;
+}
+.overall-topics .column-items::after {
+  font-family: "trelli";
+  content: "\e911";
+  color: rgb(168,168,168);
+}
+.overall-topics .column-items p {
+  margin-bottom: .75em;
+}
+.colorbar-green {
+  background-color: #00CC33;
+  padding: .5em 4em 0 0;
+  margin-bottom: .5em;
+  margin-top: 0;
+  border-radius: 5px;
+  display: inline-block;
+}
+.colorbar-yellow {
+  background-color: #FFFF33;
+  padding: .5em 4em 0 0;
+  margin-bottom: .5em;
+  margin-top: 0;
+  border-radius: 5px;
+  display: inline-block;
+}
+.colorbar-orange {
+  background-color: #FF9933;
+  padding: .5em 4em 0 0;
+  margin-bottom: .5em;
+  margin-top: 0;
+  border-radius: 5px;
+  display: inline-block;
+}
+.colorbar-red {
+  background-color: #E00000;
+  padding: .5em 4em 0 0;
+  margin-bottom: .5em;
+  margin-top: 0;
+  border-radius: 5px;
+  display: inline-block;
+}
+.colorbar-purple {
+  background-color: #9900CC;
+  padding: .5em 4em 0 0;
+  margin-bottom: .5em;
+  margin-top: 0;
+  border-radius: 5px;
+  display: inline-block;
+}
+.colorbar-blue {
+  background-color: #0000FF;
+  padding: .5em 4em 0 0;
+  margin-bottom: .5em;
+  margin-top: 0;
+  border-radius: 5px;
+  display: inline-block;
+}
+.colorbar-lt-blue {
+  background-color: #00CCFF;
+  padding: .5em 4em 0 0;
+  margin-bottom: .5em;
+  margin-top: 0;
+  border-radius: 5px;
+  display: inline-block;
+}
+.colorbar-pink {
+  background-color: #FF66CC;
+  padding: .5em 4em 0 0;
+  margin-bottom: .5em;
+  margin-top: 0;
+  border-radius: 5px;
+  display: inline-block;
+}
+.colorbar-black {
+  background-color: #000;
+  padding: .5em 4em 0 0;
+  margin-bottom: .5em;
+  margin-top: 0;
+  border-radius: 5px;
+  display: inline-block;
 }
