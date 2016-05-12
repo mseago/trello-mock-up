@@ -68,11 +68,7 @@ h1 img {
   font-weight: 600;
   padding: .75em;
   margin-right: 1em;
-  clear: both;
-  // display: inline;
-  // overflow: auto;
-  display: block;
-  position: relative;
+  display: inline-block;
 }
 
 .houston h2::after {
@@ -89,6 +85,7 @@ h1 img {
 }
 .houston span {
   color: #FFF;
+  font-size: .75em;
 }
 .color-legend, .big-picture, .overall-topics {
   padding: .25em;
@@ -202,4 +199,14 @@ h3 {
   margin-top: 0;
   border-radius: 5px;
   display: inline-block;
+}
+.column-items-no-hamb {
+  width: 96%;
+  padding: 1em .25em;
+  margin: .25em 0 .25em 0;
+  border-radius: 5px;
+  font-size: .75em;
+  font-weight:500;
+  color: rgb(60, 60, 60);
+  background-color: #FFF;
 }

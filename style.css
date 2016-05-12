@@ -101,9 +101,7 @@ h1 img {
   font-weight: 600;
   padding: .75em;
   margin-right: 1em;
-  clear: both;
-  display: block;
-  position: relative; }
+  display: inline-block; }
 
 .houston h2::after {
   font-family: "trelli";
@@ -118,7 +116,8 @@ h1 img {
   font-size: .75em; }
 
 .houston span {
-  color: #FFF; }
+  color: #FFF;
+  font-size: .75em; }
 
 .color-legend, .big-picture, .overall-topics {
   padding: .25em;
@@ -231,3 +230,13 @@ h3 {
   margin-top: 0;
   border-radius: 5px;
   display: inline-block; }
+
+.column-items-no-hamb {
+  width: 96%;
+  padding: 1em .25em;
+  margin: .25em 0 .25em 0;
+  border-radius: 5px;
+  font-size: .75em;
+  font-weight: 500;
+  color: #3c3c3c;
+  background-color: #FFF; }
