@@ -47,33 +47,35 @@ table {
   src: url("trelli.woff"); }
 
 body {
-  background-color: #0062b4;
+  background-color: #0077c2;
   font-family: sans-serif; }
 
 #header {
-  padding: .25em 0 .25em 0;
-  background-color: #005194; }
+  background-color: #026aa7; }
 
 .boards span::before {
   font-family: "trelli";
-  content: "\e906"; }
+  content: "\e906";
+  padding-right: .75em; }
 
 .boards {
-  padding: .5em 1em .5em 1em;
-  margin: .25em .5em .5em .5em;
+  padding: .45em 1em .45em .75em;
+  margin: .5em .5em 0em .5em;
   background-color: #5392be;
   color: #FFF;
-  border-radius: 5px;
-  float: left; }
+  border-radius: 3px;
+  float: left;
+  font-size: .9em;
+  font-weight: 600; }
 
 .boards:hover {
   background-color: #3b80b4; }
 
 .search-field {
   background-color: #5392be;
-  padding: .5em .5em .45em .5em;
-  margin: .25em 0 .5em 0;
-  border-radius: 5px;
+  padding: .35em .35em .15em .45em;
+  margin: .45em 0 0 0;
+  border-radius: 3px;
   float: left; }
 
 .search-field::after {
@@ -81,7 +83,7 @@ body {
   content: "\e931";
   color: #FFF; }
 
-.search-field:hover, input:hover {
+.search-field:hover, .search-field:hover input {
   background-color: #3b80b4; }
 
 input {
@@ -90,34 +92,39 @@ input {
   font-size: 1em; }
 
 h1 img {
-  width: 10%;
+  width: 8%;
   margin-left: 10em;
+  margin-top: .25em;
   text-align: center;
-  background-color: #005194; }
+  background-color: #026aa7; }
 
 .houston h2 {
   color: #FFF;
   font-size: 1em;
   font-weight: 600;
   padding: .75em;
-  margin-right: 1em;
   display: inline-block; }
 
 .houston h2::after {
   font-family: "trelli";
   content: "\e933";
   color: #FFF;
-  font-size: .75em; }
+  font-size: .85em;
+  padding-left: 1em;
+  font-weight: 100; }
 
-.houston span::before {
+.houston span:before {
   font-family: "trelli";
   content: "\e92d";
   color: #FFF;
-  font-size: .75em; }
+  font-size: .75em;
+  padding-right: 1.5em; }
 
 .houston span {
   color: #FFF;
   font-size: .75em; }
+  .houston span span:hover {
+    background-color: #005194; }
 
 .color-legend, .big-picture, .overall-topics {
   padding: .25em;
@@ -142,22 +149,6 @@ h3 {
   font-weight: 500;
   color: #3c3c3c;
   background-color: #FFF; }
-
-.big-picture .column-items::after {
-  font-family: "trelli";
-  content: "\e911";
-  color: #a8a8a8; }
-
-.big-picture .column-items p {
-  margin-bottom: .75em; }
-
-.overall-topics .column-items::after {
-  font-family: "trelli";
-  content: "\e911";
-  color: #a8a8a8; }
-
-.overall-topics .column-items p {
-  margin-bottom: .75em; }
 
 .colorbar-green {
   background-color: #00CC33;
@@ -231,6 +222,14 @@ h3 {
   border-radius: 5px;
   display: inline-block; }
 
+.big-picture .column-items::after {
+  font-family: "trelli";
+  content: "\e911";
+  color: #a8a8a8; }
+
+.big-picture .column-items p {
+  margin-bottom: .75em; }
+
 .column-items-no-hamb {
   width: 96%;
   padding: 1em .25em;
@@ -240,3 +239,11 @@ h3 {
   font-weight: 500;
   color: #3c3c3c;
   background-color: #FFF; }
+
+.overall-topics .column-items::after {
+  font-family: "trelli";
+  content: "\e911";
+  color: #a8a8a8; }
+
+.overall-topics .column-items p {
+  margin-bottom: .75em; }

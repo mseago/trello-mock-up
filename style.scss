@@ -2,7 +2,7 @@
 
 $header-bg-color: rgb(0, 81, 148); //dark blue
 $header-div-color-hover: rgb(59, 128, 180);
-$background: rgb(0, 98, 180);
+$background: rgb(0, 119, 194);
 $column-bg-color: rgb(219, 221, 224);
 
 @font-face {
@@ -14,40 +14,40 @@ body {
   font-family: sans-serif;
 }
 #header {
-  padding: .25em 0 .25em 0;
-  background-color: $header-bg-color;
+  background-color: #026aa7;
 }
 .boards span::before {
   font-family: "trelli";
   content: "\e906";
+  padding-right: .75em;
 }
-// .boards span {
-//   padding-left: .25em;
-// }
+
 .boards {
-  padding: .5em 1em .5em 1em;
-  margin: .25em .5em .5em .5em;
+  padding: .45em 1em .45em .75em;
+  margin: .5em .5em 0em .5em;
   background-color: rgb(83, 146, 190);
   color: #FFF;
-  border-radius: 5px;
+  border-radius: 3px;
   float: left;
+  font-size: .9em;
+  font-weight: 600;
 }
 .boards:hover {
   background-color: $header-div-color-hover;
 }
 .search-field {
   background-color: rgb(83, 146, 190);
-  padding: .5em .5em .45em .5em;
-  margin: .25em 0 .5em 0;
-  border-radius: 5px;
+  padding: .35em .35em .15em .45em;
+  margin: .45em 0 0 0;
+  border-radius: 3px;
   float: left;
 }
 .search-field::after {
-    font-family: "trelli";
-    content: "\e931";
-    color: #FFF;
+  font-family: "trelli";
+  content: "\e931";
+  color: #FFF;
 }
-.search-field:hover, input:hover {
+.search-field:hover, .search-field:hover input {
   background-color: $header-div-color-hover;
 }
 input {
@@ -56,37 +56,44 @@ input {
   font-size: 1em;
 }
 h1 img {
-  width: 10%;
+  width: 8%;
   margin-left: 10em;
-  // padding: .25em 0;
+  margin-top: .25em;
   text-align: center;
-  background-color: $header-bg-color;
+  background-color: #026aa7;
 }
 .houston h2 {
   color: #FFF;
   font-size: 1em;
   font-weight: 600;
   padding: .75em;
-  margin-right: 1em;
   display: inline-block;
 }
-
 .houston h2::after {
   font-family: "trelli";
   content: "\e933";
   color: #FFF;
-  font-size: .75em;
+  font-size: .85em;
+  padding-left: 1em;
+  font-weight: 100;
 }
-.houston span::before {
+.houston span:before {
   font-family: "trelli";
   content: "\e92d";
   color: #FFF;
   font-size: .75em;
+  padding-right: 1.5em;
 }
+
 .houston span {
   color: #FFF;
   font-size: .75em;
+
+    span:hover {
+    background-color: $header-bg-color;
+    }
 }
+
 .color-legend, .big-picture, .overall-topics {
   padding: .25em;
   margin-left: .5em;
@@ -100,7 +107,6 @@ h3 {
   color: rgb(60, 60, 60);
   font-size: .8em;
   font-weight: 600;
-  // margin-right: 3em;
 }
 .column-items {
   width: 96%;
@@ -112,22 +118,7 @@ h3 {
   color: rgb(60, 60, 60);
   background-color: #FFF;
 }
-.big-picture .column-items::after {
-  font-family: "trelli";
-  content: "\e911";
-  color: rgb(168,168,168);
-}
-.big-picture .column-items p {
-  margin-bottom: .75em;
-}
-.overall-topics .column-items::after {
-  font-family: "trelli";
-  content: "\e911";
-  color: rgb(168,168,168);
-}
-.overall-topics .column-items p {
-  margin-bottom: .75em;
-}
+
 .colorbar-green {
   background-color: #00CC33;
   padding: .5em 4em 0 0;
@@ -200,6 +191,15 @@ h3 {
   border-radius: 5px;
   display: inline-block;
 }
+
+.big-picture .column-items::after {
+  font-family: "trelli";
+  content: "\e911";
+  color: rgb(168,168,168);
+}
+.big-picture .column-items p {
+  margin-bottom: .75em;
+}
 .column-items-no-hamb {
   width: 96%;
   padding: 1em .25em;
@@ -209,4 +209,13 @@ h3 {
   font-weight:500;
   color: rgb(60, 60, 60);
   background-color: #FFF;
+}
+
+.overall-topics .column-items::after {
+  font-family: "trelli";
+  content: "\e911";
+  color: rgb(168,168,168);
+}
+.overall-topics .column-items p {
+  margin-bottom: .75em;
 }
